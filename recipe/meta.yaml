@@ -1,5 +1,5 @@
 {% set name = "lzip" %}
-{% set version = "1.21" %}
+{% set version = "1.22" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: http://download.savannah.gnu.org/releases/lzip/lzip-{{ version }}.tar.gz
-  sha256: e48b5039d3164d670791f9c5dbaa832bf2df080cb1fbb4f33aa7b3300b670d8b
+  sha256: c3342d42e67139c165b8b128d033b5c96893a13ac5f25933190315214e87a948
 
 build:
-  number: 1000
-  skip: True  # [win]
+  number: 0
+  skip: true  # [win]
 
 requirements:
   build:
@@ -30,8 +30,7 @@ about:
   license: GPL
   license_family: GPL
   license_file: COPYING
-  summary: 'Lzip is a lossless data compressor with a user interface similar to the
-one of gzip or bzip2.'
+  summary: Lzip is a lossless data compressor with a user interface similar to the one of gzip or bzip2.
 
   description: |
     Lzip is a lossless data compressor with a user interface similar to the
